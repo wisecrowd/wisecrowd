@@ -1,0 +1,29 @@
+/**
+  Purpose of this file is to declare the settings of the TypeScript language
+  The settings is set with different compiler options
+  This is also where we tell the compiler(in our case the IntelliJ)
+  where the files that should be compiled is placed
+*/
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es2015", "dom"],
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictPropertyInitialization": false,
+  },
+  "include": [
+    "modules/web/site/src/main/resources/websites/site/source/scripts/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*TestHelper.ts"
+  ]
+}

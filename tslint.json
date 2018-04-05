@@ -1,0 +1,16 @@
+{
+  "wisecrowdComments": [
+    "For information please read the following links",
+    "https://spin.atomicobject.com/2017/06/05/tslint-linting-setup/",
+    "https://palantir.github.io/tslint/"
+  ],
+  "extends": [
+    "tslint:recommended"
+  ],
+
+  "jsRules": {},
+  "rules": {
+    "strictPropertyInitialization": false
+  },
+  "rulesDirectory": []
+}

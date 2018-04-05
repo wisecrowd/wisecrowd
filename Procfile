@@ -1,0 +1,2 @@
+web:	java $JAVA_OPTS -cp modules/web/site:modules/web/starter/target/classes:modules/web/starter/target/dependency/* wisecrowd.starter.StarterMain
+worker:	java $JAVA_OPTS -cp modules/worker/target/classes:modules/worker/target/dependency/* wisecrowd.worker.WorkerMain
