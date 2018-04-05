@@ -26,7 +26,6 @@
     "webpack": "^3.11.0"
   },
   "scripts": {
-    "ww": "webpack --watch"
   },
   "repository": {
     "type": "git",
