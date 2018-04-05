@@ -12,7 +12,6 @@ module.exports = {
      * The entry point for our TypeScript, where we start the application
      */
     entry: {
-        example: "./modules/web/site/src/main/resources/websites/site/source/scripts/apps/exampleLoader.ts"
     },
     /**
      * Where to output the compiled bundle JavaScript file
