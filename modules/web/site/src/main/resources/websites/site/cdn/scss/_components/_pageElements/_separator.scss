@@ -1,0 +1,9 @@
+.c-separator {
+  max-width: 50%;
+  height: auto;
+  margin: 4rem auto;
+
+  @include break--768 {
+    max-width: 25%;
+  }
+}

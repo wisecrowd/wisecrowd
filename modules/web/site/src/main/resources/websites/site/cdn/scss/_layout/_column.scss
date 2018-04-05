@@ -1,0 +1,6 @@
+// Make this container a flexbox and display children as column
+
+.l-column {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,20 @@
+// standard table for displaying data
+.c-table {
+  border-spacing: 0;
+  border-collapse: separate;
+
+  &__titleCell {
+    border-bottom: 1px solid $colorSecondary;
+    padding-right: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-size: $textSizeXSmall;
+    text-align: left;
+  }
+  &__contentCell {
+    padding: .5rem 1rem .5rem .25rem;
+    border-bottom: 1px solid $colorTertiary;
+    font-size: $textSizeSmall;
+
+  }
+}

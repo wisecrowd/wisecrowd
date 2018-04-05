@@ -1,0 +1,17 @@
+.u-background {
+  &--black {
+    background: $colorBlack;
+  }
+  &--primary {
+    background: $colorPrimary;
+  }
+  &--secondary {
+    background: $colorSecondary;
+  }
+  &--tertiary {
+    background: $colorTertiary;
+  }
+  &--white {
+    background: $colorWhite;
+  }
+}

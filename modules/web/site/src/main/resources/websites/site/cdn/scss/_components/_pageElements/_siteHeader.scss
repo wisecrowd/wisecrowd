@@ -1,0 +1,13 @@
+// siteHeader is the area of the top panel of every page
+
+.c-siteHeader {
+  background: $colorPrimary;
+  color: $colorWhite;
+  margin-bottom: 2rem;
+
+  &__title {
+    font-family: $fontPrimary;
+    font-size: $textSizeLarge;
+    font-weight: 700;
+  }
+}

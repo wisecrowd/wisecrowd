@@ -1,0 +1,22 @@
+.u-fontSize {
+
+  &--xsmall {
+    font-size: $textSizeXSmall;
+  }
+  &--small {
+    font-size: $textSizeSmall;
+  }
+  &--medium {
+    font-size: $textSizeMedium;
+  }
+  &--large {
+    font-size: $textSizeLarge;
+  }
+  &--xlarge {
+    font-size: $textSizeXLarge;
+  }
+  &--xxlarge {
+    font-size: $textSizeXXLarge;
+  }
+
+}

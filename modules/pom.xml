@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                          http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>se.wisecrowd</groupId>
+        <artifactId>wisecrowd</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>modules</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>common</module>
+        <module>config</module>
+        <module>web</module>
+        <module>worker</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>maven-repo.schinzel.io</id>
+            <url>${schinzel.repo.url}</url>
+        </repository>
+    </repositories>   
+
+    <dependencies>
+        <!-- INTERNAL -->
+        <!-- EXTERNAL -->
+        <dependency>
+            <groupId>io.schinzel</groupId>
+            <artifactId>basic-utils</artifactId>
+            <version>${schinzel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${apache.commons.version}</version>
+        </dependency>
+        <dependency>
+            <!-- Annotations that generates getters, setters and more that
+            are not visible in source code.
+            https://projectlombok.org/index.html -->
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <!-- The purpose of below dependecy is to prevent output from mongo driver and Spark Test Server to system out -->
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <!-- INTERNAL TEST -->
+        <!-- TEST -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

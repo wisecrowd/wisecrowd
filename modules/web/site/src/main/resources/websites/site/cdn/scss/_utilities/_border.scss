@@ -1,0 +1,38 @@
+.u-border {
+  border-width: 3px;
+  border-style: solid;
+
+  &--colorPrimary {
+    border-color: $colorPrimary;
+  }
+  &--colorSecondary {
+    border-color: $colorSecondary;
+  }
+  &--colorTertiary {
+    border-color: $colorTertiary;
+  }
+  &--colorDarkPrimary {
+    border-color: lighten($colorPrimary, 15%);
+  }
+  &--colorDarkSecondary {
+    border-color: darken($colorSecondary, 50%);
+  }
+  &--colorDarkTertiary {
+    border-color: darken($colorTertiary, 50%);
+  }
+
+
+  &--activeColorPrimary:focus {
+    border-color: $colorPrimary;
+  }
+  &--activeColorSecondary:focus {
+    border-color: $colorSecondary;
+  }
+  &--activeColorTertiary:focus {
+    border-color: $colorTertiary;
+  }
+
+  &--animate {
+    transition: border .2s ease-out;
+  }
+}

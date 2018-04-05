@@ -1,0 +1,18 @@
+.u-color {
+  &--black {
+    color: $colorBlack;
+  }
+  &--primary {
+    color: $colorPrimary;
+  }
+  &--secondary {
+    color: $colorSecondary;
+  }
+  &--tertiary {
+    color: $colorTertiary;
+  }
+  &--white {
+    color: $colorWhite;
+  }
+
+}

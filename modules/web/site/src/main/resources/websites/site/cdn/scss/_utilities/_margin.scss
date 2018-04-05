@@ -1,0 +1,135 @@
+.u-margin {
+  &--auto {
+    margin: auto;
+  }
+  &--0 {
+    margin: 0;
+  }
+  &--25 {
+    margin: .25rem;
+  }
+  &--50 {
+    margin: .50rem;
+  }
+  &--75 {
+    margin: .75rem;
+  }
+  &--100 {
+    margin: 1rem;
+  }
+
+
+  // margin X-axis, left and right
+  &X--auto {
+    margin: auto;
+  }
+  &X--25 {
+    margin-left: .25rem;
+    margin-right: .25rem;
+  }
+  &X--50 {
+    margin-left: .50rem;
+    margin-right: .50rem;
+  }
+  &X--75 {
+    margin-left: .75rem;
+    margin-right: .75rem;
+  }
+  &X--100 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  // margin Y-axis, top and bottom
+  &Y--auto {
+    margin: auto;
+  }
+  &Y--25 {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+  }
+  &Y--50 {
+    margin-top: .50rem;
+    margin-bottom: .50rem;
+  }
+  &Y--75 {
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+  }
+  &Y--100 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+
+  // margin Left
+  &Left--auto {
+    margin: auto;
+  }
+  &Left--25 {
+    margin-left: .25rem;
+  }
+  &Left--50 {
+    margin-left: .50rem;
+  }
+  &Left--75 {
+    margin-left: .75rem;
+  }
+  &Left--100 {
+    margin-left: 1rem;
+  }
+
+  // margin Right
+  &Right--auto {
+    margin: auto;
+  }
+  &Right--25 {
+    margin-right: .25rem;
+  }
+  &Right--50 {
+    margin-right: .50rem;
+  }
+  &Right--75 {
+    margin-right: .75rem;
+  }
+  &Right--100 {
+    margin-right: 1rem;
+  }
+
+  // margin Top
+  &Top--auto {
+    margin: auto;
+  }
+  &Top--25 {
+    margin-top: .25rem;
+  }
+  &Top--50 {
+    margin-top: .50rem;
+  }
+  &Top--75 {
+    margin-top: .75rem;
+  }
+  &Top--100 {
+    margin-top: 1rem;
+  }
+  &Top--200 {
+    margin-top: 2rem;
+  }
+
+  // margin bottom
+  &Bottom--auto {
+    margin: auto;
+  }
+  &Bottom--25 {
+    margin-bottom: .25rem;
+  }
+  &Bottom--50 {
+    margin-bottom: .50rem;
+  }
+  &Bottom--75 {
+    margin-bottom: .75rem;
+  }
+  &Bottom--100 {
+    margin-bottom: 1rem;
+  }
+}

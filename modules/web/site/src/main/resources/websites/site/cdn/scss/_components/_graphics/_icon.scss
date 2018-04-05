@@ -1,0 +1,34 @@
+// Variations of icon system
+
+$iconSmall: 2rem;
+$iconMedium: 5rem;
+$iconLarge: 6rem;
+$iconXLarge: 8rem;
+
+.c-icon {
+  display: block;
+  height: 1em;
+  max-height: 1em;
+  max-width: 1em;
+  min-height: 1em;
+  min-width: 1em;
+  width: 1em;
+
+
+  &--small {
+    font-size: $iconSmall;
+  }
+  &--medium {
+    font-size: $iconMedium;
+  }
+  &--large {
+    font-size: $iconLarge;
+  }
+  &--xlarge {
+    font-size: $iconXLarge;
+  }
+
+  &--round {
+    border-radius: 50%;
+  }
+}

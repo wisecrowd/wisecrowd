@@ -1,0 +1,52 @@
+// vertical bars with labels
+
+.c-compareBars {
+  align-items: flex-end;
+  border-bottom: 3px solid $colorBlack;
+  display: inline-flex;
+  margin-top: 2.5rem; // compensate for __labelValue negative positioning (magic number)
+  padding: 0 .5rem;
+
+  &__bar {
+    border-radius: 3px 3px 0 0;
+    flex: 1 1 auto;
+    height: 0%; // This will be overrided inline
+    margin: 0 .5rem;
+    min-height: 2rem; // or bar will disappear when
+    padding: 0;
+    position: relative; // Because __labelValue positions absolute
+    transition: height 1s ease;
+    width: 50%;
+
+    &--uniqueColor {
+      &:nth-child(1) {
+        background: $colorPrimary;
+      }
+      &:nth-child(2) {
+        background: $colorSecondary;
+      }
+      &:nth-child(3) {
+        background: $colorTertiary;
+      }
+    }
+  }
+
+  &__labelValue {
+    font-family: $fontPrimary;
+    font-size: $textSizeMedium;
+    left: 0;
+    line-height: 1;
+    position: absolute; // Depending on __bar
+    right: 0;
+    text-align: center;
+    top: -1.4em;
+  }
+
+  &__labelDescription {
+    color: white;
+    font-family: $fontPrimary;
+    font-size: $textSizeSmall;
+    padding: .3rem .2rem;
+    text-align: center;
+  }
+}

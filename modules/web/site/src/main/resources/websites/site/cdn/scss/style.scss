@@ -1,0 +1,92 @@
+// This is CSS for the wisecrowd project
+
+// written by Daniel Palmér, 2018
+
+// Overall guidelines/strive to:
+// * Only style on classes; Avoid tags, ids, attributes, and create separate classes for using pseudo-classes, ex c-something__button--hover:hover
+// * Avoid cascading, usually achieved by applying a BEM-like naming-convention
+// * Use names based on function/purpose not appearance
+// * Clarity > Abbreviations
+// * Comment with //  - will get stripped in compilation by default since its not valid CSS
+
+
+// LETS GO!
+
+
+// try out "normalize" instead of a "reset", this could perhaps be removed entirely?
+@import "normalize";
+
+
+
+// VARIABLES AND DEFINITIONS
+// IMPORTANT! Resources is most likely used in other partials - MUST be imported first
+@import
+"_resources/breakpoints",
+"_resources/colors",
+"_resources/textstyles"
+;
+
+
+// Achieve basic responsiveness
+html {
+  font-size: 150%;
+  @include break--1024 {
+    font-size: 100%;
+  }
+}
+
+
+// COMPONENTS
+// Description:
+// Chunks of rules intended for specific parts of site; ex colors, font styles, layout/display
+// Dir-structure is supposed to reflect structure for kotlin components (but every kotlin-component might not have a corresponding css-component)
+// Namespace: c-
+// Example: c-siteHeader, c-siteHeader__title
+@import
+"_components/_bars/compareBars",
+
+"_components/_forms/buttonPrimary",
+
+"_components/_graphics/icon",
+
+"_components/_pageElements/pageTitle",
+"_components/_pageElements/separator",
+"_components/_pageElements/siteHeader",
+
+"_components/_tables/table"
+;
+
+
+// LAYOUT
+// Description:
+// Chunks of rules dealing only with layout of elements; ex display, position, flexbox direction
+// Namespace: l-
+// Example: l-row, l-column, l-width--300, l-maxWidth--1024
+@import
+"_layout/bullets",
+"_layout/column",
+"_layout/focusFrame", // is this a utility-class?
+"_layout/height",
+"_layout/input", // is this a component?
+"_layout/row",
+"_layout/width"
+;
+
+
+// UTILITIES
+// Description: Single, or few, rule classes intended for use anywhere,
+//              will if necessary override rules set in ex components
+// Namespace: u-
+// Example: u-margin--100, u-paddingTop--50, u-weight--700, u-fontSize--large
+@import
+"_utilities/align",
+"_utilities/background",
+"_utilities/border",
+"_utilities/color",
+"_utilities/font",
+"_utilities/fontSize",
+"_utilities/italic",
+"_utilities/margin",
+"_utilities/padding",
+"_utilities/weight"
+;

@@ -1,0 +1,20 @@
+/* media queries - mixins for code readability
+* use:
+* p {
+*   font-size: 1rem;
+*   @include break--1024 {
+*        font-size: 1.5rem;
+*   }
+* }
+*/
+
+@mixin break--768 {
+  @media ( min-width: 768px ) {
+    @content;
+  }
+}
+@mixin break--1024 {
+  @media ( min-width: 1024px ) {
+    @content;
+  }
+}

@@ -1,0 +1,10 @@
+.u-font {
+  &--primary {
+    font-family: $fontPrimary;
+    line-height: 1.4;
+  }
+  &--secondary {
+    font-family: $fontSecondary;
+    line-height: 1.4;
+  }
+}
