@@ -1,0 +1,5 @@
+---
+exclude_paths:
+  - 'modules/web/site/src/main/resources/websites/site/cdn/build/**/*.js'
+  - 'modules/web/site/src/main/resources/websites/site/source/scripts/**/*.js'
+  - 'modules/web/site/src/test/resources/**/*.js'
