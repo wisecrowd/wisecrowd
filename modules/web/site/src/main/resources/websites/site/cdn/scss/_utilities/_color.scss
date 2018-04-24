@@ -1,18 +1,32 @@
 .u-color {
+  &--beige {
+    color: $colorBeige;
+  }
   &--black {
-    color: $colorBlack;
+       color: $colorBlack;
+     }
+  &--blue {
+    color: $colorBlue;
   }
-  &--primary {
-    color: $colorPrimary;
+  &--darkBeige {
+    color: $colorDarkBeige;
   }
-  &--secondary {
-    color: $colorSecondary;
+  &--darkPurple {
+    color: $colorDarkPurple;
   }
-  &--tertiary {
-    color: $colorTertiary;
+  &--green {
+    color: $colorGreen;
+  }
+  &--purple {
+    color: $colorPurple;
+  }
+  &--red {
+    color: $colorRed;
+  }
+  &--yellow {
+    color: $colorYellow;
   }
   &--white {
     color: $colorWhite;
   }
-
 }

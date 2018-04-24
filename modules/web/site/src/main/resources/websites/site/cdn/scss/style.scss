@@ -13,7 +13,7 @@
 // LETS GO!
 
 
-// try out "normalize" instead of a "reset", this could perhaps be removed entirely?
+// "normalize"
 @import "normalize";
 
 
@@ -28,11 +28,12 @@
 
 
 // Achieve basic responsiveness
+
 html {
   font-size: 150%;
-  @include break--1024 {
-    font-size: 100%;
-  }
+//  @include break--1024 {
+ //   font-size: 100%;
+ // }
 }
 
 
@@ -43,17 +44,16 @@ html {
 // Namespace: c-
 // Example: c-siteHeader, c-siteHeader__title
 @import
-"_components/_bars/compareBars",
 
-"_components/_forms/buttonPrimary",
-
+"_components/_forms/button",
 "_components/_graphics/icon",
-
-"_components/_pageElements/pageTitle",
-"_components/_pageElements/separator",
-"_components/_pageElements/siteHeader",
-
-"_components/_tables/table"
+"_components/_pageElements/pageSection",
+"_components/_pageElements/person",
+"_components/_pageElements/topNav",
+"_components/_tables/table",
+"_components/_text/smalltext",
+"_components/_text/subTitle",
+"_components/_text/title"
 ;
 
 
@@ -63,8 +63,10 @@ html {
 // Namespace: l-
 // Example: l-row, l-column, l-width--300, l-maxWidth--1024
 @import
+"_layout/imageBackground",
 "_layout/bullets",
 "_layout/column",
+"_layout/flexList",
 "_layout/focusFrame", // is this a utility-class?
 "_layout/height",
 "_layout/input", // is this a component?
@@ -81,12 +83,14 @@ html {
 @import
 "_utilities/align",
 "_utilities/background",
+
 "_utilities/border",
 "_utilities/color",
 "_utilities/font",
 "_utilities/fontSize",
 "_utilities/italic",
 "_utilities/margin",
+"_utilities/noWrap",
 "_utilities/padding",
 "_utilities/weight"
 ;

@@ -1,17 +1,32 @@
 .u-background {
+  &--beige {
+    background-color: $colorBeige;
+  }
   &--black {
-    background: $colorBlack;
+    background-color: $colorBlack;
   }
-  &--primary {
-    background: $colorPrimary;
+  &--blue {
+    background-color: $colorBlue;
   }
-  &--secondary {
-    background: $colorSecondary;
+  &--darkBeige {
+    background-color: $colorDarkBeige;
   }
-  &--tertiary {
-    background: $colorTertiary;
+  &--darkPurple {
+    background-color: $colorDarkPurple;
+  }
+  &--green {
+    background-color: $colorGreen;
+  }
+  &--purple {
+    background-color: $colorPurple;
+  }
+  &--red {
+    background-color: $colorRed;
+  }
+  &--yellow {
+    background-color: $colorYellow;
   }
   &--white {
-    background: $colorWhite;
+    background-color: $colorWhite;
   }
 }
