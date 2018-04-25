@@ -1,0 +1,24 @@
+.c-smallLogo {
+  display: flex;
+  margin: auto;
+
+  height: 1em;
+  max-height: 1em;
+  max-width: 1em;
+  min-height: 1em;
+  min-width: 1em;
+  width: 1em;
+  border-radius: 50%;
+
+  font-size: 3rem;
+  text-decoration: none;
+
+  &_content {
+    margin: auto;
+    font-size: $textSizeLarge;
+    font-family: $fontPrimary;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}

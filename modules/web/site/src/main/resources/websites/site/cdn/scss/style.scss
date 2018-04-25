@@ -27,13 +27,9 @@
 ;
 
 
-// Achieve basic responsiveness
-
+// Set base font-size
 html {
   font-size: 150%;
-//  @include break--1024 {
- //   font-size: 100%;
- // }
 }
 
 
@@ -49,7 +45,9 @@ html {
 "_components/_graphics/icon",
 "_components/_pageElements/pageSection",
 "_components/_pageElements/person",
+"_components/_pageElements/smallLogo",
 "_components/_pageElements/topNav",
+"_components/_pageElements/video",
 "_components/_tables/table",
 "_components/_text/smalltext",
 "_components/_text/subTitle",

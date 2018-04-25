@@ -1,58 +1,64 @@
+$topNavHeight: 4rem;
+$topNavSideContainerWidth: 4rem;
+
 .c-topNav { // Add top-padding to this container to prevent top-menu from rendering on top of next element on page load
-  padding-top: 4rem;
+  padding-top: $topNavHeight;
+  position: relative;
 
   &__content { // this content is fixed
     position: fixed;
     z-index: 10000;
     top: 0;
     width: 100%;
-    height: 4rem;
+    height: $topNavHeight;
     box-sizing: border-box;
     background: #fff;
     display: flex;
-  }
-  &__logo { // graphic element in left corner
-    padding: 0 .75rem;
-    margin: auto 0;
-    color: $colorWhite;
-    font-family: $fontPrimary;
-    font-size: $textSizeLarge;
-    font-style: italic;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-decoration: none;
-  }
-
-  &__list { // this list is x-scrollable on overflow
-    list-style: none;
-    display: flex;
-    margin: auto 0;
-    overflow: scroll;
-    height: 100%;
-    padding: 0;
 
     &:after { // fade menu on right side to indicate more items
       content: '';
       display: block;
-      height: 4rem;
+      height: $topNavHeight;
       width: 2rem;
       top: 0;
       right: 0;
       position: absolute;
       background-image: linear-gradient(to right,
-                              transparentize($colorWhite, 1) 0%,
-                              $colorWhite 85%
-                            );
+              transparentize($colorWhite, 1) 0%,
+              $colorWhite 85%
+      );
       pointer-events: none;
     }
+  }
+  &__sideContainer { // graphic element in left corner
+    box-sizing: border-box;
+    display: flex;
+    padding: 0;
+    margin: auto 0;
+    width: $topNavSideContainerWidth;
+    height: $topNavHeight;
+
+  }
+
+  &__list { // this list is x-scrollable on overflow
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    overflow: scroll;
+    height: 100%;
+    width: calc(100% - #{$topNavSideContainerWidth});
+    padding: 0;
+    margin: auto 0 auto $topNavSideContainerWidth;
+
   }
 
   &__link {
     color: $colorPurple;
     font-family: $fontPrimary;
-    font-size: $textSizeLarge;
+    font-size: $textSizeMedium;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap;
     text-decoration: none;

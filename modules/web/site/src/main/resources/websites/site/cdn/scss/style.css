@@ -425,15 +425,19 @@ html {
   min-width: 1em;
   width: 1em; }
   .c-icon--small {
-    font-size: 2rem; }
+    font-size: 1rem; }
   .c-icon--medium {
-    font-size: 5rem; }
+    font-size: 2rem; }
   .c-icon--large {
-    font-size: 6rem; }
+    font-size: 4rem; }
   .c-icon--xlarge {
-    font-size: 8rem; }
+    font-size: 6rem; }
   .c-icon--round {
     border-radius: 50%; }
+  .c-icon__content {
+    fill: currentColor;
+    max-height: 100%;
+    max-width: 100%; }
 
 .c-pageSection {
   display: flex;
@@ -496,8 +500,29 @@ html {
       .c-person__details {
         font-size: 1rem; } }
 
+.c-smallLogo {
+  display: flex;
+  margin: auto;
+  height: 1em;
+  max-height: 1em;
+  max-width: 1em;
+  min-height: 1em;
+  min-width: 1em;
+  width: 1em;
+  border-radius: 50%;
+  font-size: 3rem;
+  text-decoration: none; }
+  .c-smallLogo_content {
+    margin: auto;
+    font-size: 1.777rem;
+    font-family: "Raleway", "Lucida Grande", "Arial", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 400; }
+
 .c-topNav {
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  position: relative; }
   .c-topNav__content {
     position: fixed;
     z-index: 10000;
@@ -507,24 +532,7 @@ html {
     box-sizing: border-box;
     background: #fff;
     display: flex; }
-  .c-topNav__logo {
-    padding: 0 .75rem;
-    margin: auto 0;
-    color: #fff;
-    font-family: "Raleway", "Lucida Grande", "Arial", sans-serif;
-    font-size: 1.777rem;
-    font-style: italic;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-decoration: none; }
-  .c-topNav__list {
-    list-style: none;
-    display: flex;
-    margin: auto 0;
-    overflow: scroll;
-    height: 100%;
-    padding: 0; }
-    .c-topNav__list:after {
+    .c-topNav__content:after {
       content: '';
       display: block;
       height: 4rem;
@@ -534,17 +542,48 @@ html {
       position: absolute;
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #fff 85%);
       pointer-events: none; }
+  .c-topNav__sideContainer {
+    box-sizing: border-box;
+    display: flex;
+    padding: 0;
+    margin: auto 0;
+    width: 4rem;
+    height: 4rem; }
+  .c-topNav__list {
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    overflow: scroll;
+    height: 100%;
+    width: calc(100% - 4rem);
+    padding: 0;
+    margin: auto 0 auto 4rem; }
   .c-topNav__link {
     color: #595091;
     font-family: "Raleway", "Lucida Grande", "Arial", sans-serif;
-    font-size: 1.777rem;
+    font-size: 1.333rem;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap;
     text-decoration: none;
     padding: .75rem 0;
     margin: auto 1.25rem; }
+
+.c-video {
+  width: 100%;
+  height: 0;
+  position: relative;
+  overflow: hidden; }
+  .c-video--16by9 {
+    padding-bottom: 56.25%; }
+  .c-video__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 .c-table {
   border-spacing: 0;
@@ -576,7 +615,9 @@ html {
   font-family: "Raleway", "Lucida Grande", "Arial", sans-serif;
   font-size: 3.157rem;
   font-style: italic;
-  font-weight: 700; }
+  font-weight: 700;
+  margin: 0;
+  padding: 0; }
 
 .l-imageBackground {
   background-position: center;
@@ -660,8 +701,8 @@ html {
     margin-left: 0;
     margin-right: auto; }
 
-.l-width--300 {
-  width: 300px;
+.l-width--100 {
+  width: 100%;
   box-sizing: border-box; }
 
 .l-maxWidth--1024 {
@@ -848,6 +889,8 @@ html {
   margin-bottom: .75rem; }
 .u-marginBottom--100 {
   margin-bottom: 1rem; }
+.u-marginBottom--200 {
+  margin-bottom: 2rem; }
 
 .u-noWrap {
   white-space: nowrap; }
