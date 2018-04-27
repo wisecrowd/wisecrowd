@@ -11,6 +11,9 @@ node_modules
 hs_err_pid*
 target/
 
+# npm lock file
+package-lock.json
+
 ##### IntelliJ files ######
 *.iml
 # Also IntelliJ. Use this format to be able un-ignore code style settings below
