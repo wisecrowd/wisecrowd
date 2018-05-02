@@ -1,0 +1,12 @@
+.c-footerLink {
+  display: block;
+  font-family: $fontPrimary;
+  font-size: $textSizeLarge;
+  font-weight: 400;
+  text-decoration: none;
+  transition: .1s ease-in-out color;
+
+  &:hover, &:focus {
+    color: $colorWhite;
+  }
+}

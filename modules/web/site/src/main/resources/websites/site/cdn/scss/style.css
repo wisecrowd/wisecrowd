@@ -439,9 +439,15 @@ html {
     max-height: 100%;
     max-width: 100%; }
 
+.c-invisibleAnchor {
+  visibility: hidden;
+  position: absolute;
+  top: -4rem; }
+
 .c-pageSection {
   display: flex;
-  padding: 2rem; }
+  padding: 2rem;
+  position: relative; }
   .c-pageSection__content {
     position: relative;
     display: flex;
@@ -599,6 +605,23 @@ html {
     padding: .5rem 1rem .5rem .25rem;
     border-bottom: 1px solid #27265C;
     font-size: 1rem; }
+
+.c-bodyText {
+  text-align: left;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 1.333rem;
+  line-height: 1.4;
+  font-weight: 300; }
+
+.c-footerLink {
+  display: block;
+  font-family: "Raleway", "Lucida Grande", "Arial", sans-serif;
+  font-size: 1.777rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: .1s ease-in-out color; }
+  .c-footerLink:hover, .c-footerLink:focus {
+    color: #fff; }
 
 .c-smallText {
   font-family: "Raleway", "Lucida Grande", "Arial", sans-serif;
@@ -917,6 +940,9 @@ html {
 .u-paddingX--100 {
   padding-left: 1rem;
   padding-right: 1rem; }
+.u-paddingX--200 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
 .u-paddingY--25 {
   padding-top: .25rem;
   padding-bottom: .25rem; }

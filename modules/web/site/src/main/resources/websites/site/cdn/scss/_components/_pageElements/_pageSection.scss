@@ -1,7 +1,7 @@
 .c-pageSection {
   display: flex; // to vertically center children w/ margin
   padding: 2rem;
-
+  position: relative;
   &__content {
     position: relative;
     display: flex;
