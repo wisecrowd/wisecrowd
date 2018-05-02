@@ -7,7 +7,6 @@
     "vue": "^2.5.15"
   },
   "devDependencies": {
-    "@types/bluebird": "^3.5.20",
     "@types/chai": "^4.1.2",
     "@types/mocha": "^2.2.48",
     "@vue/test-utils": "1.0.0-beta.11",
@@ -25,8 +24,7 @@
     "vue-template-compiler": "^2.5.15",
     "webpack": "^3.11.0"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kollektiva/wisecrowd.git"
