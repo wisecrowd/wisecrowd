@@ -542,11 +542,11 @@ html {
       content: '';
       display: block;
       height: 4rem;
-      width: 2rem;
+      width: 6rem;
       top: 0;
       right: 0;
       position: absolute;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #fff 85%);
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 25%, rgba(255, 255, 255, 0.85) 75%, white 100%);
       pointer-events: none; }
   .c-topNav__sideContainer {
     box-sizing: border-box;
@@ -575,7 +575,10 @@ html {
     white-space: nowrap;
     text-decoration: none;
     padding: .75rem 0;
-    margin: auto 1.25rem; }
+    margin: auto 1.25rem;
+    transition: .15s ease-in-out color; }
+    .c-topNav__link:hover {
+      color: #27265C; }
 
 .c-video {
   width: 100%;
