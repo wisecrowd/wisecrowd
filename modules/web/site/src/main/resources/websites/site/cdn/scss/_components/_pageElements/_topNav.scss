@@ -33,7 +33,10 @@ $topNavSideContainerWidth: 4rem;
     }
 
   }
-  &__sideContainer { // graphic element in left corner
+  &__lastItem {
+    padding-right: 3.75rem;
+  }
+  &__fixedLeft { // graphic element in left corner
     box-sizing: border-box;
     display: flex;
     padding: 0;
@@ -43,7 +46,7 @@ $topNavSideContainerWidth: 4rem;
 
   }
 
-  &__list { // this list is x-scrollable on overflow
+  &__menu { // this list is x-scrollable on overflow
     list-style: none;
     box-sizing: border-box;
     display: flex;
