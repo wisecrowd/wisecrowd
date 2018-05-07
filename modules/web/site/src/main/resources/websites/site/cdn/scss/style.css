@@ -616,16 +616,6 @@ html {
   line-height: 1.4;
   font-weight: 300; }
 
-.c-footerLink {
-  display: block;
-  font-family: "Raleway", "Lucida Grande", "Arial", sans-serif;
-  font-size: 1.777rem;
-  font-weight: 400;
-  text-decoration: none;
-  transition: .1s ease-in-out color; }
-  .c-footerLink:hover, .c-footerLink:focus {
-    color: #fff; }
-
 .c-smallText {
   font-family: "Raleway", "Lucida Grande", "Arial", sans-serif;
   font-size: 1rem;
@@ -644,24 +634,6 @@ html {
   font-weight: 700;
   margin: 0;
   padding: 0; }
-
-.l-imageBackground {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative; }
-  .l-imageBackground--darken:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 100%;
-    left: 0;
-    width: 100%;
-    background: rgba(25, 25, 25, 0.5); }
-  .l-imageBackground--main {
-    background-image: url("../images/bg-people.jpeg"); }
-  .l-imageBackground--purple {
-    background-image: linear-gradient(135deg, #595091, #27265C); }
 
 .l-bullets--empty {
   list-style: none; }
@@ -686,9 +658,6 @@ html {
       .l-flexList__item {
         width: 12.5rem; } }
 
-.l-focusFrame:focus {
-  outline: 5px solid gold; }
-
 .l-height--85 {
   height: 85vh;
   max-height: 85vh;
@@ -696,6 +665,24 @@ html {
   box-sizing: border-box; }
 .l-height--min45 {
   min-height: 45vh; }
+
+.l-imageBackground {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+  .l-imageBackground--darken:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(25, 25, 25, 0.5); }
+  .l-imageBackground--main {
+    background-image: url("../images/bg-people.jpeg"); }
+  .l-imageBackground--purple {
+    background-image: linear-gradient(135deg, #595091, #27265C); }
 
 .l-input {
   border: none;

@@ -17,7 +17,6 @@
 @import "normalize";
 
 
-
 // VARIABLES AND DEFINITIONS
 // IMPORTANT! Resources is most likely used in other partials - MUST be imported first
 @import
@@ -36,11 +35,10 @@ html {
 // COMPONENTS
 // Description:
 // Chunks of rules intended for specific parts of site; ex colors, font styles, layout/display
-// Dir-structure is supposed to reflect structure for kotlin components (but every kotlin-component might not have a corresponding css-component)
+// Dir-structure is supposed to reflect structure for js-components (but every js-component might not have a corresponding css-component)
 // Namespace: c-
 // Example: c-siteHeader, c-siteHeader__title
 @import
-
 "_components/_forms/button",
 "_components/_graphics/icon",
 "_components/_pageElements/invisibleAnchor",
@@ -51,7 +49,6 @@ html {
 "_components/_pageElements/video",
 "_components/_tables/table",
 "_components/_text/bodyText",
-"_components/_text/footerLink",
 "_components/_text/smalltext",
 "_components/_text/subTitle",
 "_components/_text/title"
@@ -64,12 +61,11 @@ html {
 // Namespace: l-
 // Example: l-row, l-column, l-width--300, l-maxWidth--1024
 @import
-"_layout/imageBackground",
 "_layout/bullets",
 "_layout/column",
 "_layout/flexList",
-"_layout/focusFrame", // is this a utility-class?
 "_layout/height",
+"_layout/imageBackground",
 "_layout/input", // is this a component?
 "_layout/row",
 "_layout/width"
@@ -84,7 +80,6 @@ html {
 @import
 "_utilities/align",
 "_utilities/background",
-
 "_utilities/border",
 "_utilities/color",
 "_utilities/font",
