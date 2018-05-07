@@ -1,6 +1,11 @@
 .l-height {
-  &--200 {
-     height: 200px;
-     box-sizing: border-box;
-   }
+  &--85 {
+    height: 85vh;
+    max-height: 85vh;
+    min-height: 85vh;
+    box-sizing: border-box;
+  }
+  &--min45 {
+    min-height: 45vh;
+  }
 }

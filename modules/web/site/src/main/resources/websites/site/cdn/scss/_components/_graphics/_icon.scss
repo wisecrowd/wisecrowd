@@ -1,9 +1,9 @@
 // Variations of icon system
 
-$iconSmall: 2rem;
-$iconMedium: 5rem;
-$iconLarge: 6rem;
-$iconXLarge: 8rem;
+$iconSmall: 1rem;
+$iconMedium: 2rem;
+$iconLarge: 4rem;
+$iconXLarge: 6rem;
 
 .c-icon {
   display: block;
@@ -30,5 +30,11 @@ $iconXLarge: 8rem;
 
   &--round {
     border-radius: 50%;
+  }
+
+  &__content {
+    fill: currentColor;
+    max-height: 100%;
+    max-width: 100%;
   }
 }

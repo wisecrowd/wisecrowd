@@ -1,0 +1,19 @@
+.l-flexList {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+
+  @include break--1024 {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  &__item {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    @include break--1024 {
+      width: 12.5rem;
+    }
+  }
+}

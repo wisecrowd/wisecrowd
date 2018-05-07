@@ -1,7 +1,17 @@
 // Colors
-$colorPrimary: #ff4dab;
-$colorSecondary: #c33fff;
-$colorTertiary: #a2ddc0;
-
+$colorBeige: #F7EFE6;
+$colorBlack: #191919;
+$colorBlue: #268FA6;
+$colorDarkBeige: #C4B6A7;
+$colorDarkPurple: #27265C;
+$colorGreen: #6FB03C;
+$colorPurple: #595091;
+$colorRed: #E0431F;
+$colorYellow: #F0B135;
 $colorWhite: #fff;
-$colorBlack: #24242d;
+
+$colorPrimary: $colorPurple;
+$colorSecondary: $colorYellow;
+$colorTertiary: $colorDarkPurple;
+
+

@@ -1,0 +1,81 @@
+$topNavHeight: 4rem;
+$topNavSideContainerWidth: 4rem;
+
+.c-topNav { // Add top-padding to this container to prevent top-menu from rendering on top of next element on page load
+  padding-top: $topNavHeight;
+  position: relative;
+
+  &__content { // this content is fixed
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: $topNavHeight;
+    box-sizing: border-box;
+    background: #fff;
+    display: flex;
+
+    &:after { // fade menu on right side to indicate more items
+      content: '';
+      display: block;
+      height: $topNavHeight;
+      width: 6rem; // double the width of items padding to avoid fade not being visible in between items
+      top: 0;
+      right: 0;
+      position: absolute;
+      background-image: linear-gradient(to right,
+              rgba(255, 255, 255, 0) 0%,
+              rgba(255, 255, 255, .75) 25%,
+              rgba(255, 255, 255, .85) 75%,
+              rgba(255, 255, 255, 1) 100%
+      );
+      pointer-events: none;
+    }
+
+  }
+  &__lastItem {
+    padding-right: 3.75rem;
+  }
+  &__fixedLeft { // graphic element in left corner
+    box-sizing: border-box;
+    display: flex;
+    padding: 0;
+    margin: auto 0;
+    width: $topNavSideContainerWidth;
+    height: $topNavHeight;
+
+  }
+
+  &__menu { // this list is x-scrollable on overflow
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    overflow: scroll;
+    height: 100%;
+    width: calc(100% - #{$topNavSideContainerWidth});
+    padding: 0;
+    margin: auto 0 auto $topNavSideContainerWidth;
+
+  }
+
+  &__link {
+    color: $colorPurple;
+    font-family: $fontPrimary;
+    font-size: $textSizeMedium;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: .75rem 0;
+    margin: auto 1.25rem;
+
+    transition: .15s ease-in-out color;
+
+    &:hover  {
+      color: $colorDarkPurple;
+    }
+  }
+
+}

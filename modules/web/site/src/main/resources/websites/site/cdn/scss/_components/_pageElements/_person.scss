@@ -1,0 +1,59 @@
+// staff "profiles", a photo and description, responsive
+.c-person {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 1rem 2rem;
+
+  @include break--1024 {
+    flex-flow: column;
+    margin-bottom: 2rem;
+  }
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &__photo {
+    width: 10rem;
+    height: 10rem;
+    min-width: 10rem;
+    min-height: 10rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+
+    @include break--1024 {
+      width: 6rem;
+      height: 6rem;
+      min-width: 6rem;
+      min-height: 6rem;
+      margin: 0 auto 1rem;
+    }
+  }
+
+  &__title, &__details {
+    font-family: $fontPrimary;
+    margin-bottom: .25rem;
+    @include break--1024 {
+      text-align: center;
+    }
+  }
+  &__title {
+    font-size: $textSizeLarge;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    @include break--1024 {
+      font-size: $textSizeMedium;
+    }
+  }
+  &__details {
+    font-size: $textSizeMedium;
+    line-height: 1.45;
+    font-style: italic;
+
+    @include break--1024 {
+      font-size: $textSizeSmall;
+    }
+  }
+}

@@ -21,7 +21,8 @@
 
   // margin X-axis, left and right
   &X--auto {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   &X--25 {
     margin-left: .25rem;
@@ -42,7 +43,8 @@
 
   // margin Y-axis, top and bottom
   &Y--auto {
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   &Y--25 {
     margin-top: .25rem;
@@ -64,7 +66,10 @@
 
   // margin Left
   &Left--auto {
-    margin: auto;
+    margin-left: auto;
+  }
+  &Left--0 {
+    margin-left: 0;
   }
   &Left--25 {
     margin-left: .25rem;
@@ -81,7 +86,10 @@
 
   // margin Right
   &Right--auto {
-    margin: auto;
+    margin-right: auto;
+  }
+  &Right--0 {
+    margin-right: 0;
   }
   &Right--25 {
     margin-right: .25rem;
@@ -95,10 +103,19 @@
   &Right--100 {
     margin-right: 1rem;
   }
+  &Right--150 {
+    margin-right: 1.5rem;
+  }
+  &Right--250 {
+    margin-right: 2.5rem;
+  }
 
   // margin Top
   &Top--auto {
-    margin: auto;
+    margin-top: auto;
+  }
+  &Top--0 {
+    margin-top: 0;
   }
   &Top--25 {
     margin-top: .25rem;
@@ -118,7 +135,10 @@
 
   // margin bottom
   &Bottom--auto {
-    margin: auto;
+    margin-bottom: auto;
+  }
+  &Bottom--0 {
+    margin-bottom: 0;
   }
   &Bottom--25 {
     margin-bottom: .25rem;
@@ -131,5 +151,8 @@
   }
   &Bottom--100 {
     margin-bottom: 1rem;
+  }
+  &Bottom--200 {
+    margin-bottom: 2rem;
   }
 }

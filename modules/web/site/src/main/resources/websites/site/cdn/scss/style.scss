@@ -13,9 +13,8 @@
 // LETS GO!
 
 
-// try out "normalize" instead of a "reset", this could perhaps be removed entirely?
+// "normalize"
 @import "normalize";
-
 
 
 // VARIABLES AND DEFINITIONS
@@ -27,33 +26,32 @@
 ;
 
 
-// Achieve basic responsiveness
+// Set base font-size
 html {
   font-size: 150%;
-  @include break--1024 {
-    font-size: 100%;
-  }
 }
 
 
 // COMPONENTS
 // Description:
 // Chunks of rules intended for specific parts of site; ex colors, font styles, layout/display
-// Dir-structure is supposed to reflect structure for kotlin components (but every kotlin-component might not have a corresponding css-component)
+// Dir-structure is supposed to reflect structure for js-components (but every js-component might not have a corresponding css-component)
 // Namespace: c-
 // Example: c-siteHeader, c-siteHeader__title
 @import
-"_components/_bars/compareBars",
-
-"_components/_forms/buttonPrimary",
-
+"_components/_forms/button",
 "_components/_graphics/icon",
-
-"_components/_pageElements/pageTitle",
-"_components/_pageElements/separator",
-"_components/_pageElements/siteHeader",
-
-"_components/_tables/table"
+"_components/_pageElements/invisibleAnchor",
+"_components/_pageElements/pageSection",
+"_components/_pageElements/person",
+"_components/_pageElements/smallLogo",
+"_components/_pageElements/topNav",
+"_components/_pageElements/video",
+"_components/_tables/table",
+"_components/_text/bodyText",
+"_components/_text/smalltext",
+"_components/_text/subTitle",
+"_components/_text/title"
 ;
 
 
@@ -65,8 +63,9 @@ html {
 @import
 "_layout/bullets",
 "_layout/column",
-"_layout/focusFrame", // is this a utility-class?
+"_layout/flexList",
 "_layout/height",
+"_layout/imageBackground",
 "_layout/input", // is this a component?
 "_layout/row",
 "_layout/width"
@@ -87,6 +86,7 @@ html {
 "_utilities/fontSize",
 "_utilities/italic",
 "_utilities/margin",
+"_utilities/noWrap",
 "_utilities/padding",
 "_utilities/weight"
 ;

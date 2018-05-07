@@ -1,0 +1,17 @@
+.c-button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: $textSizeMedium;
+  font-family: $fontPrimary;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  padding: 0.875em 1.33em;
+  border-radius: .25rem;
+  text-decoration: none;
+
+  &--borderWhite {
+    color: $colorWhite;
+    border: .2rem solid $colorWhite;
+  }
+}
